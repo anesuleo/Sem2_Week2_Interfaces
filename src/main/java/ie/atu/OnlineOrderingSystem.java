@@ -3,7 +3,8 @@ package ie.atu;
 public class OnlineOrderingSystem {
     public static void main(String args[]){
         MenuItem[] menuItems = new MenuItem[]{
-                new Burger("Cheese Burger", 9.50, "Cheese"), new Pizza("Meat Deluxe", 15.30, "Chicken, Mushroom, Meatballs"), new Salad("Cesar Salad", 5.50, "Romaine lettuce, Croutons, Cesar Dressing")
+                new Burger("Cheese Burger", 9.50, "Cheese"), new Pizza("Meat Deluxe", 15.30, "Chicken, Mushroom, Meatballs"), new Salad("Cesar Salad", 5.50, "Romaine lettuce, Croutons, Cesar Dressing"),
+                new Dessert("Ice Cream", 6.50, "Chocolate")
         };
 
         for (MenuItem menuItem : menuItems)
@@ -18,7 +19,7 @@ public class OnlineOrderingSystem {
             totalCost+= menuItem.getPrice();
         }
 
-        System.out.println("Total Cost: " + totalCost );
+        System.out.println("Total Cost: " + totalCost);
 
     }
 
